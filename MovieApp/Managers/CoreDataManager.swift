@@ -22,6 +22,26 @@ class CoreDataManager {
         })
     }
     
+    func getMovieById(id: NSManagedObjectID) -> Movie? {
+        do {
+            return try persistentContainer.viewContext.existingObject(with: id) as? Movie
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    
+    func deleteMovie(_ movie: Movie) {
+        persistentContainer.viewContext.delete(movie)
+        
+        do {
+            try persistentContainer.viewContext.save()
+        } catch {
+            persistentContainer.viewContext.rollback()
+            print("Deleting the movie failed \(error)")
+        }
+    }
+    
     func save() {
         do {
             try persistentContainer.viewContext.save()
