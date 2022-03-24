@@ -18,6 +18,7 @@
 		8D5C25E225E72CD4002BAF40 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25E125E72CD4002BAF40 /* Date+Extensions.swift */; };
 		A55C33C827EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A55C33C627EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld */; };
 		A55C33CB27EBD91A0002E4D3 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */; };
+		A5C8770C27ED17A70050C356 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8D5C25E125E72CD4002BAF40 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		A55C33C727EBD54A0002E4D3 /* MovieAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppModel.xcdatamodel; sourceTree = "<group>"; };
 		A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
+		A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */,
+				A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				8D5C25DF25E72747002BAF40 /* MovieListScreen.swift in Sources */,
 				8D0926C125E59B3B00502FF8 /* MovieAppApp.swift in Sources */,
 				8D5C25D025E6FA7C002BAF40 /* RatingView.swift in Sources */,
+				A5C8770C27ED17A70050C356 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
