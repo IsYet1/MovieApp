@@ -16,6 +16,10 @@
 		8D5C25D025E6FA7C002BAF40 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25CF25E6FA7C002BAF40 /* RatingView.swift */; };
 		8D5C25DF25E72747002BAF40 /* MovieListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25DE25E72747002BAF40 /* MovieListScreen.swift */; };
 		8D5C25E225E72CD4002BAF40 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25E125E72CD4002BAF40 /* Date+Extensions.swift */; };
+		A52FDD1B27EE6E9000B7AF63 /* AddReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD1A27EE6E9000B7AF63 /* AddReviewScreen.swift */; };
+		A52FDD1D27EE6ECE00B7AF63 /* AddReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD1C27EE6ECE00B7AF63 /* AddReviewViewModel.swift */; };
+		A52FDD1F27EE6F2D00B7AF63 /* ReviewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD1E27EE6F2D00B7AF63 /* ReviewListViewModel.swift */; };
+		A52FDD2127EE6FA800B7AF63 /* ReviewListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD2027EE6FA800B7AF63 /* ReviewListScreen.swift */; };
 		A55C33C827EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A55C33C627EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld */; };
 		A55C33CB27EBD91A0002E4D3 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */; };
 		A5C8770C27ED17A70050C356 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */; };
@@ -33,6 +37,10 @@
 		8D5C25CF25E6FA7C002BAF40 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		8D5C25DE25E72747002BAF40 /* MovieListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListScreen.swift; sourceTree = "<group>"; };
 		8D5C25E125E72CD4002BAF40 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A52FDD1A27EE6E9000B7AF63 /* AddReviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewScreen.swift; sourceTree = "<group>"; };
+		A52FDD1C27EE6ECE00B7AF63 /* AddReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewModel.swift; sourceTree = "<group>"; };
+		A52FDD1E27EE6F2D00B7AF63 /* ReviewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewModel.swift; sourceTree = "<group>"; };
+		A52FDD2027EE6FA800B7AF63 /* ReviewListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListScreen.swift; sourceTree = "<group>"; };
 		A55C33C727EBD54A0002E4D3 /* MovieAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppModel.xcdatamodel; sourceTree = "<group>"; };
 		A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
 		A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
@@ -103,6 +111,8 @@
 			children = (
 				A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */,
 				A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */,
+				A52FDD1C27EE6ECE00B7AF63 /* AddReviewViewModel.swift */,
+				A52FDD1E27EE6F2D00B7AF63 /* ReviewListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -112,6 +122,8 @@
 			children = (
 				8D5C25C225E6EBD0002BAF40 /* AddMovieScreen.swift */,
 				8D5C25DE25E72747002BAF40 /* MovieListScreen.swift */,
+				A52FDD1A27EE6E9000B7AF63 /* AddReviewScreen.swift */,
+				A52FDD2027EE6FA800B7AF63 /* ReviewListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -213,12 +225,16 @@
 				8D5C25C325E6EBD0002BAF40 /* AddMovieScreen.swift in Sources */,
 				A55C33CB27EBD91A0002E4D3 /* AddMovieViewModel.swift in Sources */,
 				8D5C25E225E72CD4002BAF40 /* Date+Extensions.swift in Sources */,
+				A52FDD1F27EE6F2D00B7AF63 /* ReviewListViewModel.swift in Sources */,
 				8D0926D525E5AE9C00502FF8 /* CoreDataManager.swift in Sources */,
 				8D5C25C825E6F3D8002BAF40 /* View+Extensions.swift in Sources */,
 				A55C33C827EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld in Sources */,
 				8D5C25DF25E72747002BAF40 /* MovieListScreen.swift in Sources */,
+				A52FDD1B27EE6E9000B7AF63 /* AddReviewScreen.swift in Sources */,
+				A52FDD2127EE6FA800B7AF63 /* ReviewListScreen.swift in Sources */,
 				8D0926C125E59B3B00502FF8 /* MovieAppApp.swift in Sources */,
 				8D5C25D025E6FA7C002BAF40 /* RatingView.swift in Sources */,
+				A52FDD1D27EE6ECE00B7AF63 /* AddReviewViewModel.swift in Sources */,
 				A5C8770C27ED17A70050C356 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
