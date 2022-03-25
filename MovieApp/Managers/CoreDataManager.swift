@@ -13,6 +13,7 @@ class CoreDataManager {
     
     // Will create and use as a single instance - Singleton interface
     static let shared = CoreDataManager()
+    
     private init() {
         persistentContainer = NSPersistentContainer(name: "MovieAppModel")
         persistentContainer.loadPersistentStores(completionHandler: {(description, error) in
@@ -20,6 +21,10 @@ class CoreDataManager {
                 fatalError("Failed to initialize Core Data \(error)")
             }
         })
+    }
+    
+    var viewContext: NSManagedObjectContext {
+        return persistentContainer.viewContext
     }
     
     func getMovieById(id: NSManagedObjectID) -> Movie? {
@@ -42,10 +47,13 @@ class CoreDataManager {
         }
     }
     
+    // This simply saves everything in the managedObject context.
     func save() {
         do {
             try persistentContainer.viewContext.save()
         } catch {
+            // Auto-rollback if there's any problems in the save.
+            persistentContainer.viewContext.rollback()
             print("Failed to save the movie \(error)")
         }
     }

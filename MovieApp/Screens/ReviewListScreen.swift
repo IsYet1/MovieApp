@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ReviewListScreen: View {
     
+    let movie: MovieViewModel
     @State private var isPresented: Bool = false
     
     var body: some View {
@@ -31,6 +32,7 @@ struct ReviewListScreen: View {
         .sheet(isPresented: $isPresented, onDismiss: {
             
         }, content: {
+            AddReviewScreen(movie: movie)
             
         })
         .onAppear(perform: {
@@ -41,6 +43,7 @@ struct ReviewListScreen: View {
 
 struct ReviewListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewListScreen().embedInNavigationView()
+        let movie = MovieViewModel(movie: Movie(context: CoreDataManager.shared.viewContext))
+        ReviewListScreen(movie: movie).embedInNavigationView()
     }
 }

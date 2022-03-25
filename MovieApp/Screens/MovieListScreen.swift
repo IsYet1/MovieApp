@@ -25,24 +25,28 @@ struct MovieListScreen: View {
     var body: some View {
         List {
             ForEach(movieListVM.movies, id: \.id) { movie in
-                MovieCell(movie: movie)
+                NavigationLink(destination: ReviewListScreen(movie: movie),
+                               label: {
+                    MovieCell(movie: movie)
+                }
+                )
             }.onDelete(perform: deleteMovie)
             
         }.listStyle(PlainListStyle())
-        .navigationTitle("Movies")
-        .navigationBarItems(trailing: Button("Add Movie") {
-            isPresented = true 
-        })
-        .sheet(isPresented: $isPresented, onDismiss: {
-            movieListVM.getAllMovies()
-        },  content: {
-            AddMovieScreen()
-        })
-        .embedInNavigationView()
+            .navigationTitle("Movies")
+            .navigationBarItems(trailing: Button("Add Movie") {
+                isPresented = true
+            })
+            .sheet(isPresented: $isPresented, onDismiss: {
+                movieListVM.getAllMovies()
+            },  content: {
+                AddMovieScreen()
+            })
+            .embedInNavigationView()
         
-        .onAppear(perform: {
-            movieListVM.getAllMovies()
-        })
+            .onAppear(perform: {
+                movieListVM.getAllMovies()
+            })
     }
 }
 
