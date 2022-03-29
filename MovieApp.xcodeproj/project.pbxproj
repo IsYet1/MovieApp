@@ -22,6 +22,7 @@
 		A52FDD2127EE6FA800B7AF63 /* ReviewListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52FDD2027EE6FA800B7AF63 /* ReviewListScreen.swift */; };
 		A55C33C827EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A55C33C627EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld */; };
 		A55C33CB27EBD91A0002E4D3 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */; };
+		A5BCA2E927F3B22500A75B27 /* Reviews+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCA2E827F3B22500A75B27 /* Reviews+Extensions.swift */; };
 		A5C8770C27ED17A70050C356 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		A52FDD2027EE6FA800B7AF63 /* ReviewListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListScreen.swift; sourceTree = "<group>"; };
 		A55C33C727EBD54A0002E4D3 /* MovieAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppModel.xcdatamodel; sourceTree = "<group>"; };
 		A55C33CA27EBD91A0002E4D3 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
+		A5BCA2E827F3B22500A75B27 /* Reviews+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reviews+Extensions.swift"; sourceTree = "<group>"; };
 		A5C8770B27ED17A70050C356 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 		8D0926BF25E59B3B00502FF8 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5D7071327F27053000E0F98 /* Models */,
 				A55C33C927EBD5930002E4D3 /* CoreData */,
 				8D5C25CE25E6FA70002BAF40 /* Views */,
 				8D5C25C625E6F3CB002BAF40 /* Extensions */,
@@ -151,6 +154,14 @@
 				A55C33C627EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A5D7071327F27053000E0F98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5BCA2E827F3B22500A75B27 /* Reviews+Extensions.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 				A52FDD2127EE6FA800B7AF63 /* ReviewListScreen.swift in Sources */,
 				8D0926C125E59B3B00502FF8 /* MovieAppApp.swift in Sources */,
 				8D5C25D025E6FA7C002BAF40 /* RatingView.swift in Sources */,
+				A5BCA2E927F3B22500A75B27 /* Reviews+Extensions.swift in Sources */,
 				A52FDD1D27EE6ECE00B7AF63 /* AddReviewViewModel.swift in Sources */,
 				A5C8770C27ED17A70050C356 /* MovieListViewModel.swift in Sources */,
 			);
@@ -365,7 +377,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = WM9Y6XVZYN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -387,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = WM9Y6XVZYN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
