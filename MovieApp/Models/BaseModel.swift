@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-protocol BaseModel: NSManagedObject {
+protocol BaseModel where Self: NSManagedObject {
     func save()
     func delete()
     static func byId<T: NSManagedObject>(id: NSManagedObjectID) -> T?
