@@ -10,7 +10,7 @@
 		8D0926C125E59B3B00502FF8 /* MovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0926C025E59B3B00502FF8 /* MovieAppApp.swift */; };
 		8D0926C525E59B3C00502FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0926C425E59B3C00502FF8 /* Assets.xcassets */; };
 		8D0926C825E59B3C00502FF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0926C725E59B3C00502FF8 /* Preview Assets.xcassets */; };
-		8D0926D525E5AE9C00502FF8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0926D425E5AE9C00502FF8 /* CoreDataManager.swift */; };
+		8D0926D525E5AE9C00502FF8 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0926D425E5AE9C00502FF8 /* CoreDataProvider.swift */; };
 		8D5C25C325E6EBD0002BAF40 /* AddMovieScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25C225E6EBD0002BAF40 /* AddMovieScreen.swift */; };
 		8D5C25C825E6F3D8002BAF40 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25C725E6F3D8002BAF40 /* View+Extensions.swift */; };
 		8D5C25D025E6FA7C002BAF40 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5C25CF25E6FA7C002BAF40 /* RatingView.swift */; };
@@ -34,7 +34,7 @@
 		8D0926C425E59B3C00502FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0926C725E59B3C00502FF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D0926C925E59B3C00502FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D0926D425E5AE9C00502FF8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8D0926D425E5AE9C00502FF8 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		8D5C25C225E6EBD0002BAF40 /* AddMovieScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieScreen.swift; sourceTree = "<group>"; };
 		8D5C25C725E6F3D8002BAF40 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		8D5C25CF25E6FA7C002BAF40 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				8D5C25C625E6F3CB002BAF40 /* Extensions */,
 				8D2C953E25E69E3500459F4F /* Screens */,
 				8D2C952C25E6907D00459F4F /* View Models */,
-				8D0926D725E5D50400502FF8 /* Managers */,
+				8D0926D725E5D50400502FF8 /* Providers */,
 				8D0926C025E59B3B00502FF8 /* MovieAppApp.swift */,
 				8D0926C425E59B3C00502FF8 /* Assets.xcassets */,
 				8D0926C925E59B3C00502FF8 /* Info.plist */,
@@ -105,12 +105,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8D0926D725E5D50400502FF8 /* Managers */ = {
+		8D0926D725E5D50400502FF8 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				8D0926D425E5AE9C00502FF8 /* CoreDataManager.swift */,
+				8D0926D425E5AE9C00502FF8 /* CoreDataProvider.swift */,
 			);
-			path = Managers;
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		8D2C952C25E6907D00459F4F /* View Models */ = {
@@ -244,7 +244,7 @@
 				8D5C25E225E72CD4002BAF40 /* Date+Extensions.swift in Sources */,
 				A5BCA2ED27F3BC1400A75B27 /* Movie+Extension.swift in Sources */,
 				A52FDD1F27EE6F2D00B7AF63 /* ReviewListViewModel.swift in Sources */,
-				8D0926D525E5AE9C00502FF8 /* CoreDataManager.swift in Sources */,
+				8D0926D525E5AE9C00502FF8 /* CoreDataProvider.swift in Sources */,
 				8D5C25C825E6F3D8002BAF40 /* View+Extensions.swift in Sources */,
 				A5BCA2EB27F3BB0900A75B27 /* BaseModel.swift in Sources */,
 				A55C33C827EBD54A0002E4D3 /* MovieAppModel.xcdatamodeld in Sources */,

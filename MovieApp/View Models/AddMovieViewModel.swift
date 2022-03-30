@@ -14,13 +14,12 @@ class AddMovieViewModel: ObservableObject {
     var releaseDate: Date = Date() // Current date
     
     func save() {
-        let manager = CoreDataManager.shared
-        let movie = Movie(context: manager.persistentContainer.viewContext)
+        let movie = Movie(context: Movie.viewContext)
         movie.title = title
         movie.director = director
         movie.rating = Double(rating ?? 0)
         movie.releaseDate = releaseDate
         
-        manager.save()
+        movie.save()
     }
 }

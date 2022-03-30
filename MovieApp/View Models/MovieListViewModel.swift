@@ -12,14 +12,14 @@ class MovieListViewModel: ObservableObject {
     @Published var movies = [MovieViewModel]()
     
     func deleteMovie(movie: MovieViewModel) {
-        let movie = CoreDataManager.shared.getMovieById(id: movie.id)
+        let movie: Movie? = Movie.byId(id: movie.id)
         if let movie = movie {
-            CoreDataManager.shared.deleteMovie(movie)
+            movie.delete()
         }
     }
     
     func getAllMovies() {
-        let localMovies = CoreDataManager.shared.getAllMovies()
+        let localMovies: [Movie] = Movie.all()
         DispatchQueue.main.async {
             self.movies = localMovies.map(MovieViewModel.init)
         }

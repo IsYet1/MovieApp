@@ -13,14 +13,16 @@ class AddReviewViewModel: ObservableObject {
     var text: String = ""
     
     func addReviewForMovie(movieParam: MovieViewModel) {
-        let movie = CoreDataManager.shared.getMovieById(id: movieParam.id)
-        let review = Review(context: CoreDataManager.shared.viewContext)
-        
-        review.title = title
-        review.text = text
-        review.movie = movie
-        
-        CoreDataManager.shared.save()
+        let movie: Movie? = Movie.byId(id: movieParam.id)
+        if let movie = movie {
+            let review = Review(context: Review.viewContext)
+            
+            review.title = title
+            review.text = text
+            review.movie = movie
+            
+            review.save()
+        }
     }
     
 }
