@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-extension Review {
+extension Review: BaseModel {
     static func getReviewsByMovieId (moviedId: NSManagedObjectID) -> [Review] {
         let request: NSFetchRequest<Review> = Review.fetchRequest()
         request.predicate = NSPredicate(format: "movie = %@", moviedId)
